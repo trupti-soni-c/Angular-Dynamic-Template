@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  logo=" Elegance";
   navigationArray=[ {'menulink':'#slide01','menuname':'Home','data-menuanchor':'slide01'},
                     {'menulink':'#slide02','menuname':'About Me','data-menuanchor':'slide02'},
                     {'menulink':'#slide03','menuname':'Services','data-menuanchor':'slide03'},
