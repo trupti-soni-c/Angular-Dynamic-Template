@@ -1,9 +1,9 @@
 <div class="section-inner">
     <div class="row justify-content-center">
         <div class="col-md-8 wide-col-laptop">
-            <div class="title-block animate" data-animate="fadeInUp">
-                <span>Services</span>
-                <h2>What I Do?</h2>
+             <div class="title-block animate" data-animate="fadeInUp" *ngFor="let s of services">
+                <span>{{s.title}}</span>
+                <h2>{{s.h2text}}</h2>
             </div>
             <div class="services-section">
                 <div class="services-list owl-carousel">

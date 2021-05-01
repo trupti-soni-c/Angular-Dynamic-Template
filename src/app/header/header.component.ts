@@ -6,12 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-  logo=" Elegance";
+  logo=" Elegance"; //display logo
   navigationArray=[ {'menulink':'#slide01','menuname':'Home','data-menuanchor':'slide01'},
                     {'menulink':'#slide02','menuname':'About Me','data-menuanchor':'slide02'},
                     {'menulink':'#slide03','menuname':'Services','data-menuanchor':'slide03'},
@@ -19,5 +14,10 @@ export class HeaderComponent implements OnInit {
                     {'menulink':'#slide05','menuname':'My Work','data-menuanchor':'slide05'},
                     {'menulink':'#slide06','menuname':'Testimonials','data-menuanchor':'slide06'},
                     {'menulink':'#slide07','menuname':'Contact Me','data-menuanchor':'slide07'}
-];
+]; // display menu of header section in site
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+ 
 }
