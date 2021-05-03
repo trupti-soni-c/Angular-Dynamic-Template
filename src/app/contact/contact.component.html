@@ -1,22 +1,22 @@
 <div class="section-inner">
     <div class="row justify-content-center">
         <div class="col-md-7 wide-col-laptop">
-            <div class="title-block animate" data-animate="fadeInUp">
-                <span>Contact</span>
-                <h2>Get In Touch!</h2>
+            <div class="title-block animate" data-animate="fadeInUp" *ngFor="let c of contact">
+                <span>{{c.title}}</span>
+                <h2>{{c.h2text}}</h2>
             </div>
             <div class="contact-section">
                 <div class="row">
                     <div class="col-md-6 animate" data-animate="fadeInUp">
-                        <div class="contact-box">
+                        <div class="contact-box" *ngFor="let c of info">
                             <div class="contact-row">
-                                <i class="fa fa-map-marker"></i> 123 New Street Here, Wonderful City 10220
+                                <i class="fa fa-map-marker"></i> {{c.address}}
                             </div>
                             <div class="contact-row">
-                                <i class="fa fa-phone"></i> 090 080 0210
+                                <i class="fa fa-phone"></i> {{c.phone}}
                             </div>
                             <div class="contact-row">
-                                <i class="fa fa-envelope"></i> info@company.co
+                                <i class="fa fa-envelope"></i> {{c.site}}
                             </div>
                         </div>
                     </div>
